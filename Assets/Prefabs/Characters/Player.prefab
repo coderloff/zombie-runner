@@ -176,8 +176,9 @@ GameObject:
   - component: {fileID: 1978471637655604388}
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 8616685848737228376}
+  - component: {fileID: 1349192291}
   m_Layer: 8
-  m_Name: PlayerCapsule
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -382,6 +383,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1349192291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38083468f195ff945a6e1f16218e85d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoints: 100
 --- !u!1001 &955346018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -527,6 +541,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
   m_PrefabInstance: {fileID: 1669909769}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &9005220657923961580 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+  m_PrefabInstance: {fileID: 1669909769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3266691292722375894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -604,8 +623,36 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6221650e9610e7545827a6b446e0fd09, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+--- !u!1 &953473380866193232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+  m_PrefabInstance: {fileID: 3266691292722375894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &256321981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953473380866193232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fba206dd6e31344a33884eb90f87db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 9005220657923961580}
+  range: 100
+  damage: 30
+  hitCooldown: 0.1
+  muzzhleFlash: {fileID: 2014217926991527873}
+  hitEffect: {fileID: 1766814854480755888, guid: e9e2afb89b374ca419ed0e11d0dfa263, type: 3}
 --- !u!4 &953473380866485104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+  m_PrefabInstance: {fileID: 3266691292722375894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2014217926991527873 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3937956850436772631, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
   m_PrefabInstance: {fileID: 3266691292722375894}
   m_PrefabAsset: {fileID: 0}
