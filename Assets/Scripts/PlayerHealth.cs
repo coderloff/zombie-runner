@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
 
         if(hitpoints <= 0)
         {
-            Debug.Log("You dead, sweetie newer one");
+            GetComponent<DeathHandler>().HandleDeath();
         }
     }
 }
