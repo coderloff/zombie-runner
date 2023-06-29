@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
 
-    [SerializeField] Animator animator;
+    Animator animator;
 
     float distanceToTarget = Mathf.Infinity;
 
