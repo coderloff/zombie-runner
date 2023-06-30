@@ -14,8 +14,6 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float zoomedInSensitivity;
     [SerializeField] float zoomedOutSensitivity;
 
-    [SerializeField] MouseLook mouseLook = new MouseLook();
-
     bool isZoomed;
 
     void Start()
@@ -43,7 +41,6 @@ public class WeaponZoom : MonoBehaviour
     void MakeZoom()
     {
         virtualCamera.m_Lens.FieldOfView = zoomedInFov;
-        Cursor.
     }
 
     void ExitZoom()

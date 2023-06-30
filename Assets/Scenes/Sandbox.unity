@@ -1417,6 +1417,19 @@ MonoBehaviour:
   virtualCamera: {fileID: 1808527813}
   zoomedOutFOV: 40
   zoomedInFov: 20
+  zoomedInSensitivity: 0
+  zoomedOutSensitivity: 0
+--- !u!114 &606675246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2517655875877171500, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1504644379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196423077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8391545cebcea43a86ed3c21db5a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &701118700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1840,7 +1853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &761572785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2082,6 +2095,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5713408321894918377, guid: db2bc1d440f67264e918983898696320, type: 3}
   m_PrefabInstance: {fileID: 737507113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &958350657 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220657923961580, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1504644379}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &969838571
 PrefabInstance:
@@ -3656,6 +3674,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 851542143230103710, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 953473380866193232, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417961171024361301, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 958350657}
+    - target: {fileID: 7417961171024361301, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 606675246}
     - target: {fileID: 7483118003532664212, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: gameOverCanvas
       value: 
