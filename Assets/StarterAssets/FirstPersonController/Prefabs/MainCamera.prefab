@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7319513096640548144}
+  - component: {fileID: 4324284262087052106}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -28,12 +29,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 953473379281577593}
-  - {fileID: 851542142668898743}
   - {fileID: 1227337752443594223}
+  - {fileID: 851542142668898743}
+  - {fileID: 953473379281577593}
   m_Father: {fileID: 9005220659476430818}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4324284262087052106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366311972409995406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3138d2386b3bc4148b1eee9769f0c222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1 &9005220659476430823
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalScale.x
@@ -319,7 +333,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2337074158996965286, guid: 26fa3b6435c69994abf1cab1ae1371e8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 26fa3b6435c69994abf1cab1ae1371e8, type: 3}
       propertyPath: m_LocalPosition.x

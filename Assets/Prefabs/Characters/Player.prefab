@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1349192291}
   - component: {fileID: 7483118003532664212}
   - component: {fileID: 2517655875877171500}
+  - component: {fileID: 560581021725894366}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -392,6 +393,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
+--- !u!114 &560581021725894366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75c19234f0b59d48b5dce0ed7edd70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XSensitivity: 2
+  YSensitivity: 2
+  clampVerticalRotation: 1
+  MinimumX: -90
+  MaximumX: 90
+  smooth: 0
+  smoothTime: 5
 --- !u!1001 &955346018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -463,6 +483,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
   m_PrefabInstance: {fileID: 955346018}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8762286024303737113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+  m_PrefabInstance: {fileID: 955346018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1669909769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,6 +509,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2357187489519003081, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 8762286024303737113}
     - target: {fileID: 8845896157638556106, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: FPCamera
       value: 
@@ -533,6 +568,14 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: far clip plane
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: near clip plane
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_Name
