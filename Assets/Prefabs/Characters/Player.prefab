@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1349192291}
   - component: {fileID: 7483118003532664212}
   - component: {fileID: 2517655875877171500}
-  - component: {fileID: 560581021725894366}
+  - component: {fileID: 2425793690171258561}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -392,8 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8391545cebcea43a86ed3c21db5a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
---- !u!114 &560581021725894366
+  ammoSlots: []
+--- !u!114 &2425793690171258561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,16 +402,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8616685848737228372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75c19234f0b59d48b5dce0ed7edd70c, type: 3}
+  m_Script: {fileID: 11500000, guid: 252eae9e58d03b143bd6b9f9eb66eace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSensitivity: 2
-  YSensitivity: 2
-  clampVerticalRotation: 1
-  MinimumX: -90
-  MaximumX: 90
-  smooth: 0
-  smoothTime: 5
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1001 &955346018
 PrefabInstance:
   m_ObjectHideFlags: 0
